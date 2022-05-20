@@ -1,0 +1,15 @@
+REGISTER sip:as1-r23-syd.cisco.com SIP/2.0^M
+Via: SIP/2.0/UDP 10.66.214.25:49766;rport;branch=z9hG4bKPjt4cEWV87kT7XOn4QmekWgog5hI2CCRqB^M
+Route: <sip:10.66.82.68:5060;lr>^M
+ax-Forwards: 70^M
+From: "p3332017001_bc-pc" <sip:3332017001@as1-r23-syd.cisco.com>;tag=yZ4Zg-iI2xrYaqnu-dG5cH-BMcjgBOB6^M
+To: "p3332017001_bc-pc" <sip:3332017001@as1-r23-syd.cisco.com>^M
+Call-ID: HO4.2xOvSoL5QiNB1cEbiOGIIE2J.v-G^M
+CSeq: 59171 REGISTER^M
+User-Agent: Telephone 1.5.2^M
+Contact: "p3332017001_bc-pc" <sip:3332017001@10.66.214.25:49766;ob>^M
+Expires: 300^M
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, INFO, SUBSCRIBE, NOTIFY, REFER, MESSAGE, OPTIONS^M
+Authorization: Digest username="3332017001", realm="as1-r23-syd.cisco.com", nonce="BroadWorksXl1ocj9glT33ns0fBW", uri="sip:as1-r23-syd.cisco.com", response="32a98f82af209e5cdd986b5b5571a8de", algorithm=MD5, cnonce="XOmVefBe26FB3TsKOgWjZJRFJYsmPjj6", qop=auth, nc=00000001^M
+Content-Length:  0^M
+

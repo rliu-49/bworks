@@ -22,6 +22,7 @@ matches = pattern.finditer(s1)
 
 param = []
 val = []
+
 for match in matches:
         print(match)
         param.append(match.group(1))
@@ -52,17 +53,21 @@ md = hashlib.md5()
 #ha2 = hashlib.md5("foo".encode())
 ha1_str = "{username}:{realm}:{password}".format(**pairs)
 ha2_str = "{method}:{uri}".format(**pairs)
+
 print(ha1_str)
 print(ha2_str)
 
 ha1 = hashlib.md5(ha1_str.encode()).hexdigest()
 ha2 = hashlib.md5(ha2_str.encode()).hexdigest()
+
 #ha1 = hashlib.md5(b'u1rliuEnt1grp1:as2-syd-vm7:123456').hexdigest()
 print(type(ha1))
 print(ha1)
 print(ha2)
+
 mid = "{nonce}:{nc}:{cnonce}:{qop}".format(**pairs)
 print(mid)
+
 #fin_str = ha1 + ':' + mid + ':' + ha2
 fin_str = "{ha1}:{mid}:{ha2}".format(ha1=ha1, mid=mid, ha2=ha2)
 print(fin_str)
